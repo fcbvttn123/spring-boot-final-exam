@@ -1,0 +1,8 @@
+<div class="submit-form">
+	<div class="form-group">
+		Title: <input [(ngModel)]="item.title" class="form-control" id="title" type="text" name="title" />
+		Price: <input [(ngModel)]="item.price" class="form-control" id="price" type="number" name="price" />
+		Date: <input [(ngModel)]="item.dateTime" class="form-control" id="dateTime" type="date" name="dateTime" />
+		<button (click)="saveItem()" class="btn btn-success">Submit</button>
+	</div>
+</div>

@@ -1,0 +1,11 @@
+<ul class="list-group">
+	@for (item of items; track item.id) {
+	<li class="list-group-item">
+		{{ item.title }} ${{ item.price }} {{ item.dateTime }}
+		<button class="btn btn-danger btn-sm float-right" (click)="item.id && deleteItem(item.id)">Delete</button>
+	</li>
+	}
+</ul>
+<br>
+<button class="btn btn-danger btn-sm float-right" (click)="calculateTotalPrice()">Show Total</button>
+<p>${{ totalPrice }}</p>
